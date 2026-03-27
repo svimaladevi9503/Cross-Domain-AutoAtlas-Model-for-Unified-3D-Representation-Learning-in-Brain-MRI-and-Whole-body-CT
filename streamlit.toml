@@ -1,0 +1,18 @@
+# Streamlit Configuration
+
+[server]
+  port = 8501
+  enableCORS = false
+  headless = true
+
+[theme]
+  primaryColor = "#F63366"
+  backgroundColor = "#FFFFFF"
+  secondaryBackgroundColor = "#F0F0F5"
+  textColor = "#000000"
+  font = "sans serif"
+
+[logger]
+  level = "debug"
+  format = "[%(levelname)s] %(message)s"
+  file = "streamlit.log"
