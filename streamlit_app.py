@@ -5,8 +5,11 @@ import time
 import numpy as np
 from PIL import Image
 
-# Backend URL - for Streamlit Cloud, set this as an environment variable
-API_URL = os.getenv("API_URL", "http://localhost:8001")
+# Backend URL configuration prioritization:
+# 1. API_URL env variable (preferred for deployment)
+# 2. st.secrets["API_URL"] (common for Streamlit Sharing secrets)
+# 3. localhost fallback for local development
+API_URL = os.getenv("API_URL") or st.secrets.get("API_URL", "http://localhost:8001")
 
 st.set_page_config(page_title="AutoAtlas Dashboard", layout="wide")
 

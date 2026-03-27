@@ -1,7 +1,7 @@
 import os
 import shutil
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import FileResponse
 from backend.database import init_db, create_session, save_upload, save_result, get_session_history
 from backend.models_dl import run_monai_segmentation, run_cyclegan_translation
 

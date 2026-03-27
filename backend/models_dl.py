@@ -2,7 +2,6 @@ import numpy as np
 import cv2
 import os
 import nibabel as nib
-from PIL import Image
 
 # Lazy MONAI Model initialization
 def get_monai_unet():

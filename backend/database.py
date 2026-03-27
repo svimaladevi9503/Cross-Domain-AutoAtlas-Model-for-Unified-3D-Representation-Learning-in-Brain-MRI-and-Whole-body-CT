@@ -2,7 +2,6 @@ import sqlite3
 import os
 import uuid
 from contextlib import contextmanager
-from datetime import datetime
 
 # Define DB_PATH relative to this file
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
