@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image
 
 # Backend URL (can be environment variable)
-API_URL = "http://localhost:8001"
+API_URL = "https://unified-autoatlas.onrender.com"
 
 st.set_page_config(page_title="AutoAtlas Dashboard", layout="wide")
 

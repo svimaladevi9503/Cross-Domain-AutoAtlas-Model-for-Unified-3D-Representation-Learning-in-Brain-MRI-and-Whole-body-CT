@@ -8,8 +8,8 @@ from PIL import Image
 # Backend URL configuration prioritization:
 # 1. API_URL env variable (preferred for deployment)
 # 2. st.secrets["API_URL"] (common for Streamlit Sharing secrets)
-# 3. localhost fallback for local development
-API_URL = os.getenv("API_URL") or st.secrets.get("API_URL", "http://localhost:8001")
+# 3. deployed Render backend URL as default
+API_URL = os.getenv("API_URL") or st.secrets.get("API_URL", "https://unified-autoatlas.onrender.com")
 
 st.set_page_config(page_title="AutoAtlas Dashboard", layout="wide")
 
