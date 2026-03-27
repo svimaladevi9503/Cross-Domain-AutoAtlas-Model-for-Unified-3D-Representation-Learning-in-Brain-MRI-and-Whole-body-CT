@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Install system dependencies for OpenCV and medical imaging
 RUN apt-get update --fix-missing && apt-get install -y \
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
     libgomp1 \
     && apt-get clean \
